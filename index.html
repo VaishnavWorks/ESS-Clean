@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ESS - Easy Step Consultancy Services W.L.L.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo" tabindex="0" aria-label="ESS Easy Step Consultancy Services W.L.L.">ESS</div>
+        <div class="nav-menu" role="menubar" aria-label="Primary Navigation">
+          <a href="#home" role="menuitem" tabindex="0">Home</a>
+          <a href="http://127.0.0.1:5500/products/products.html">Products</a>
+          <a href="#services" role="menuitem" tabindex="0">Services</a>
+          <a href="http://127.0.0.1:5500/about/about.html" role="menuitem" tabindex="0">About Us</a>
+          <a href="#faq" role="menuitem" tabindex="0">FAQ</a>
+          <a href="#contact" role="menuitem" tabindex="0">Contact</a>
+        </div>
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+    <div class="mobile-menu" id="mobile-menu" role="menu" aria-hidden="true">
+      <a href="#home" role="menuitem" tabindex="-1">Home</a>
+      <a href="#services" role="menuitem" tabindex="-1">Services</a>
+      <a href="#about" role="menuitem" tabindex="-1">About Us</a>
+      <a href="#faq" role="menuitem" tabindex="-1">FAQ</a>
+      <a href="#contact" role="menuitem" tabindex="-1">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h1>Easy Step Consultancy Services W.L.L.</h1>
+      <p>Your trusted partner in back-office and general trading solutions.</p>
+      <div class="typed-text" aria-live="polite" aria-atomic="true"></div>
+      <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact Us</button>
+    </section>
+
+    <section id="services" class="fade-in">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Back Office Solutions</h3>
+          <p>Streamlined and efficient back office support tailored for your business needs.</p>
+        </div>
+        <div class="service-card">
+          <h3>General Trading</h3>
+          <p>Comprehensive trading services ensuring quality and reliability in every transaction.</p>
+        </div>
+        <div class="service-card">
+          <h3>Consultancy</h3>
+          <p>Expert consultancy to help your business navigate complex challenges with ease.</p>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <!-- Portfolio Section -->
+<section id="portfolio" class="fade-in">
+    <h2>Our Projects</h2>
+    <div class="portfolio-grid">
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x200" alt="Project 1" />
+        <h3>Project One</h3>
+        <p>Innovative solution for modern businesses.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x200" alt="Project 2" />
+        <h3>Project Two</h3>
+        <p>Creative design and development project.</p>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/300x200" alt="Project 3" />
+        <h3>Project Three</h3>
+        <p>Tech consulting and cloud solutions.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="fade-in">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial-carousel">
+      <div class="testimonial active">
+        <p>"Fantastic support and tailored solutions. Highly recommend!"</p>
+        <h4>- Jane Doe</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Professional team with excellent results delivered on time."</p>
+        <h4>- John Smith</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Reliable and proactive partners for our business growth."</p>
+        <h4>- Alice Johnson</h4>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Pricing Plans Section -->
+  <section id="pricing" class="fade-in">
+    <h2>Pricing Plans</h2>
+    <div class="pricing-grid">
+      <div class="plan-card">
+        <h3>Basic</h3>
+        <p class="price">$19/month</p>
+        <ul>
+          <li>5 Projects</li>
+          <li>Email Support</li>
+          <li>Basic Analytics</li>
+        </ul>
+        <button class="btn-primary">Choose Plan</button>
+      </div>
+      <div class="plan-card popular">
+        <h3>Pro</h3>
+        <p class="price">$49/month</p>
+        <ul>
+          <li>20 Projects</li>
+          <li>Priority Support</li>
+          <li>Advanced Analytics</li>
+        </ul>
+        <button class="btn-primary">Choose Plan</button>
+      </div>
+      <div class="plan-card">
+        <h3>Enterprise</h3>
+        <p class="price">Contact Us</p>
+        <ul>
+          <li>Unlimited Projects</li>
+          <li>Dedicated Manager</li>
+          <li>Custom Solutions</li>
+        </ul>
+        <button class="btn-primary">Contact Sales</button>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Back to Top">↑</button>
+  
+
+    <section id="contact" class="fade-in">
+      <h2>Contact Us</h2>
+      <form id="contact-form" novalidate>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="tel" name="phone" placeholder="Your Phone Number" />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Easy Step Consultancy Services W.L.L. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
