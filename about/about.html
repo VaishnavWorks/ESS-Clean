@@ -3,96 +3,177 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About ESS Bahrain</title>
-  <link rel="stylesheet" href="style.css">
+  <title>About Us | Essentech</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #ffffff;
-      color: #111;
-      line-height: 1.6;
+      box-sizing: border-box;
       scroll-behavior: smooth;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #1a1a1a;
     }
 
     header {
-      background-color: #e50000;
+      background: linear-gradient(120deg, #000000, #333333);
       color: white;
-      padding: 1.5rem 2rem;
+      padding: 2rem;
       text-align: center;
+      position: relative;
+      overflow: hidden;
     }
 
-    section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-      opacity: 0;
-      transform: translateY(30px);
-      animation: fadeInUp 1s forwards;
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+      animation: fadeInDown 1s ease-in-out;
     }
 
-    section:nth-of-type(2) { animation-delay: 0.2s; }
-    section:nth-of-type(3) { animation-delay: 0.4s; }
-    section:nth-of-type(4) { animation-delay: 0.6s; }
-    section:nth-of-type(5) { animation-delay: 0.8s; }
-    section:nth-of-type(6) { animation-delay: 1s; }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    @keyframes fadeInDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
 
     @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .content p {
+      margin-bottom: 2rem;
+      line-height: 1.8;
+      font-size: 1.1rem;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .video-section {
+      display: flex;
+      justify-content: center;
+      margin: 3rem 0;
     }
 
     iframe {
-      width: 100%;
-      max-width: 800px;
-      height: 450px;
-      display: block;
-      margin: 2rem auto;
-      border: none;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .card {
+      background: #f8f8f8;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h3 {
+      margin-bottom: 1rem;
+      color: #111;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 4rem 0;
+    }
+
+    .button-group a {
+      background: #000;
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .button-group a:hover {
+      background: #333;
     }
 
     footer {
       text-align: center;
       padding: 2rem;
-      background: #f0f0f0;
-      color: #555;
+      background: #111;
+      color: #999;
       font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>About ESS Bahrain</h1>
+    <h1>About Essentech</h1>
+    <p>Empowering trade, delivering trust – from China to the world.</p>
   </header>
-  <iframe src="https://drive.google.com/file/d/1x_mvwIRLxAJigao-80Z3b1u3cjX9ayHF/preview" width="640" height="480" allow="autoplay"></iframe>
 
-  <section>
-    <p>Welcome to ESS Bahrain, a dynamic enterprise redefining how modern businesses access trading and consultancy solutions. At our core, we are dedicated to simplifying complex business operations and enabling clients to focus on growth while we handle the rest. Whether you're a startup looking for reliable trade connections or an enterprise aiming for seamless project execution, ESS offers the strategic backing to turn ambition into reality. We combine innovative thinking with practical implementation, ensuring each client receives tailor-made support based on their needs and goals.</p>
-  </section>
+  <div class="video-section">
+    <iframe width="720" height="405" src="videos/ESS.mp4" frameborder="0" allowfullscreen></iframe>
+  </div>
 
-  <section>
-    <p>Our General Trading division is built on strong international partnerships, offering direct deals to clients who prefer transparent and streamlined procurement processes. We take pride in our ability to deliver quality goods quickly and efficiently, with an emphasis on trust and reliability. Every trade is treated as a standalone project, allowing us to cater to each client's unique requirements while maintaining strict compliance with international trade standards. This personalized approach ensures every transaction is handled with care and precision.</p>
-  </section>
+  <div class="content">
+    <p>Essentech stands as a symbol of excellence in international trading. Our journey began with a simple yet powerful vision—to streamline direct trade for individuals and businesses through our General Trading division. Whether you're seeking to source niche products or engage in one-time imports, our team ensures transparency and smooth execution every step of the way. From sourcing to shipping, we make the process straightforward and reliable, tailored to your specific needs.</p>
 
-  <section>
-    <p>ESS Bahrain also offers specialized project execution and management, particularly in the lighting industry. From tube lights to energy-efficient panels and solar-powered systems, we manage the entire supply chain—from sourcing the best products in China to final delivery and project oversight. This division is focused on providing businesses and institutions with cutting-edge lighting solutions that are not only sustainable but also cost-effective. Our expertise in logistics and quality control guarantees smooth execution from start to finish.</p>
-  </section>
+    <p>Our Project Management and Execution division specializes exclusively in lighting products. With decades of expertise, we manage the complete lifecycle of projects involving LED tube lights, panels, and more from China. We don't just facilitate trade—we engineer solutions. By handling everything from factory coordination to logistics and customs clearance, we ensure our clients receive superior quality and timely delivery at competitive pricing.</p>
 
-  <section>
-    <p>A major strength of ESS lies in our Back Office Services, which act as the hidden engine powering many international operations. We serve as a B2B supplier, supporting companies across various countries by sourcing and delivering quality products primarily from China. Our team ensures proper documentation, customs handling, vendor negotiation, and on-time delivery. Clients trust us as their silent partner—working behind the scenes to reduce their operational load while increasing efficiency and profitability through robust backend support.</p>
-  </section>
+    <p>The Back Office vertical at Essentech operates as the hidden engine powering global supply chains. Acting as a strategic sourcing partner, we serve companies worldwide by supplying curated products from verified Chinese manufacturers. Our back-office services include documentation, supplier management, sample handling, and end-to-end procurement solutions—enabling our partners to focus on their core business operations with peace of mind.</p>
 
-  <section>
-    <p>At ESS Bahrain, we don’t just offer services—we build long-term partnerships rooted in reliability, transparency, and excellence. Our unique structure combining general trading, specialized lighting project execution, and back office consultancy enables us to serve a diverse clientele with unmatched flexibility. Whether you're looking to trade globally, manage a lighting project, or outsource your business operations, ESS Bahrain stands ready as your committed partner. We are the Easy Step you need toward a smarter, more sustainable business future.</p>
-  </section>
+    <p>What sets us apart is our hybrid model that combines hands-on project execution with streamlined sourcing solutions. Our multilingual team bridges cultural and linguistic gaps between our clients and suppliers, fostering seamless communication and minimizing risk. Each service we provide is underpinned by our commitment to quality, efficiency, and client satisfaction, ensuring that we are not just a vendor, but a long-term ally in your business journey.</p>
+
+    <p>At Essentech, we believe that global trade should be transparent, efficient, and accessible. With an unwavering dedication to excellence and innovation, we continue to push boundaries and redefine the standards of international sourcing. Whether you're a startup looking to test a new product or a multinational managing complex logistics, Essentech is here to deliver results that elevate your business on the world stage.</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>General Trading</h3>
+        <p>Personalized sourcing and direct trade solutions tailored to individual and business needs.</p>
+      </div>
+      <div class="card">
+        <h3>Project Execution</h3>
+        <p>End-to-end project management specializing in lighting product imports and logistics.</p>
+      </div>
+      <div class="card">
+        <h3>Back Office Services</h3>
+        <p>Supporting global companies with sourcing, supplier management, and documentation from China.</p>
+      </div>
+    </div>
+
+    <div class="button-group">
+      <a href="index.html">Home</a>
+      <a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Back to Top</a>
+    </div>
+  </div>
 
   <footer>
-    &copy; 2025 ESS Bahrain. All rights reserved.
+    &copy; 2025 Essentech. All rights reserved.
   </footer>
 </body>
 </html>
